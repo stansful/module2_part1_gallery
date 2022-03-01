@@ -1,8 +1,11 @@
 const form = document.querySelector('#form') as HTMLFormElement;
 
-const getUserInfo = () => {
-  const email = document.querySelector('#email').value;
-  const password = document.querySelector('#password').value;
+const getUserInfo = (): User => {
+  const emailInputElement = document.querySelector('#email') as HTMLInputElement;
+  const passwordInputElement = document.querySelector('#password') as HTMLInputElement;
+
+  const email = emailInputElement.value;
+  const password = passwordInputElement.value;
 
   return {
     email,
