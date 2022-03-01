@@ -29,7 +29,7 @@ const showGallery = async (page: string, token: string) => {
 
   gallery.innerHTML = '';
 
-  data.objects.forEach((imgLink) => (gallery.innerHTML += `<img src="${imgLink}" width="200" height="200" alt="img">`));
+  data.objects.forEach((imgLink) => (gallery.innerHTML += `<img src='${imgLink}' width='200' height='200' alt='img'>`));
 };
 
 const redirectToIndex = () => {
