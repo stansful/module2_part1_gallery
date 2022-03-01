@@ -22,13 +22,7 @@ const previousButtonEvent = async () => {
   await showGallery(getCurrentPage(), getToken());
 };
 
-const showGallery = async (page, token) => {
-  // const expired = checkTokenForExpiration()
-  //
-  // if (expired) {
-  //     redirectToIndex()
-  // }
-
+const showGallery = async (page: string, token: string) => {
   updateQueryParams(page);
 
   const data = await httpGet(`${API_URL}/gallery?page=${page}`, token);
