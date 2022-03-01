@@ -3,7 +3,7 @@ const setToken = (token, timeToLive = TOKEN_TIME_TO_LIVE_IN_MINUTES) => {
   setTokenExpirationTime(timeToLive);
 };
 
-const setTokenExpirationTime = (minutes) => {
+const setTokenExpirationTime = (minutes: number) => {
   const expirationTimeInMilliSeconds = minutes * 60 * 1000;
   localStorage.setItem(TOKEN_EXPIRES_TIME, `${expirationTimeInMilliSeconds}`);
 };
