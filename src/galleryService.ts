@@ -2,7 +2,7 @@ const gallery = document.querySelector('#gallery');
 const previousButton = document.querySelector('#previous');
 const nextButton = document.querySelector('#next');
 
-const updateQueryParams = (pageNumber) => {
+const updateQueryParams = (pageNumber: string) => {
   if (location.search !== `?page=${pageNumber}`) {
     location.search = `?page=${pageNumber}`;
   }
