@@ -1,6 +1,6 @@
-const gallery = document.querySelector('#gallery');
-const previousButton = document.querySelector('#previous');
-const nextButton = document.querySelector('#next');
+const gallery = document.querySelector('#gallery') as HTMLElement;
+const previousButton = document.querySelector('#previous') as HTMLButtonElement;
+const nextButton = document.querySelector('#next') as HTMLButtonElement;
 
 const updateQueryParams = (pageNumber: string) => {
   if (location.search !== `?page=${pageNumber}`) {
