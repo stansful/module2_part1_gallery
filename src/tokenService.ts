@@ -16,10 +16,6 @@ const getToken = () => {
   return localStorage.getItem(TOKEN);
 };
 
-const checkTokenForExpiration = () => {
-  return Date.now() > Number(localStorage.getItem(TOKEN_EXPIRES_TIME));
-};
-
 const removeToken = () => {
   localStorage.removeItem(TOKEN);
   localStorage.removeItem(TOKEN_EXPIRES_TIME);
