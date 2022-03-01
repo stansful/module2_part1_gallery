@@ -22,7 +22,7 @@ const validatePage = () => {
   } else {
     if (location.search.match(queryRegex)) {
       const pageNumber = location.search.split('?page=').pop();
-      setNewPage(pageNumber);
+      setNewPage(Number(pageNumber));
     } else {
       alert(PAGE_DID_NOT_EXIST);
       setNewPage();
