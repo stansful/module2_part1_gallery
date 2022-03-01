@@ -36,7 +36,7 @@ const submitEvent = async (event: Event) => {
 
   const response = await signIn(user);
 
-  if (response.errorMessage) {
+  if ('errorMessage' in response) {
     return alert(response.errorMessage);
   }
 
