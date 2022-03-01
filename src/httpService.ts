@@ -1,4 +1,4 @@
-const httpPost = async (url = '', data = {}) => {
+const httpPost = async <ResponseData>(url = '', data = {}): Promise<ResponseData> => {
   const response = await fetch(url, {
     method: 'POST',
     headers: {
@@ -10,7 +10,7 @@ const httpPost = async (url = '', data = {}) => {
   return response.json();
 };
 
-const httpGet = async (path = '', token = '') => {
+const httpGet = async <ResponseData>(path = '', token = ''): Promise<ResponseData> => {
   const response = await fetch(path, {
     method: 'GET',
     headers: {
