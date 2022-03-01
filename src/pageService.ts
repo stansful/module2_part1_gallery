@@ -2,7 +2,7 @@ const setNewPage = (value = 1) => {
   localStorage.setItem(PAGE, String(value));
 };
 
-const getCurrentPage = () => {
+const getCurrentPage = (): string => {
   const page = localStorage.getItem(PAGE);
 
   if (page) {
@@ -11,7 +11,7 @@ const getCurrentPage = () => {
 
   setNewPage();
 
-  return localStorage.getItem(PAGE);
+  return localStorage.getItem(PAGE) as string;
 };
 
 const validatePage = () => {
