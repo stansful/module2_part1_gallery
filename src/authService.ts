@@ -10,7 +10,7 @@ const getUserInfo = () => {
   };
 };
 
-const validate = (user) => {
+const validate = (user: User) => {
   const emailRegex = /\w+@\w+\.[a-z]+/;
   const passwordRegex = /\w{8,}/;
 
