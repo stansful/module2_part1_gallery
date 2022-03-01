@@ -1,4 +1,4 @@
-const setToken = (token, timeToLive = TOKEN_TIME_TO_LIVE_IN_MINUTES) => {
+const setToken = (token: string, timeToLive: number = TOKEN_TIME_TO_LIVE_IN_MINUTES) => {
   localStorage.setItem(TOKEN, token);
   setTokenExpirationTime(timeToLive);
 };
