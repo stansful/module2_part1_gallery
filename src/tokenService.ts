@@ -12,8 +12,9 @@ const getTokenExpirationTime = () => {
   return Number(localStorage.getItem(TOKEN_EXPIRES_TIME));
 };
 
-const getToken = () => {
-  return localStorage.getItem(TOKEN);
+const getToken = (): string => {
+  const token = localStorage.getItem(TOKEN);
+  return token ? token : '';
 };
 
 const removeToken = () => {
