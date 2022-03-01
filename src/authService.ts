@@ -1,4 +1,4 @@
-const form = document.querySelector('#form');
+const form = document.querySelector('#form') as HTMLFormElement;
 
 const getUserInfo = () => {
   const email = document.querySelector('#email').value;
