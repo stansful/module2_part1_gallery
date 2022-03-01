@@ -25,7 +25,7 @@ const previousButtonEvent = async () => {
 const showGallery = async (page: string, token: string) => {
   updateQueryParams(page);
 
-  const data = await httpGet(`${API_URL}/gallery?page=${page}`, token);
+  const data = await httpGet<Gallery>(`${API_URL}/gallery?page=${page}`, token);
 
   gallery.innerHTML = '';
 
