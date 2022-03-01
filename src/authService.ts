@@ -20,8 +20,8 @@ const validate = (user) => {
   return Boolean(emailMatch && passwordMatch);
 };
 
-const signIn = async (user) => {
-  return httpPost(`${API_URL}/login`, user);
+const signIn = async (user: User) => {
+  return httpPost<Token | ErrorMessage>(`${API_URL}/login`, user);
 };
 
 const submitEvent = async (event: Event) => {
