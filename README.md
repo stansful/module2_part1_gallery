@@ -9,13 +9,13 @@
 ```
 .
 ├── src
-│    ├── constansts.ts       -| include all constants
-│    ├── interfaces.ts       -| include all custom interfaces
-│    ├── authService.ts      -| main logic of the index.html
-│    ├── galleryService.ts   -| main logic of the gallery.html
-│    ├── httpService.ts      -| include get and post request functions
-│    ├── pageService.ts      -| add/get current page number to the local storage and set query params
-│    └── tokenService.ts     -| add/get token and expiresTime to the local storage
+│    ├── constansts.ts        -| include all constants
+│    ├── interfaces.ts        -| include all custom interfaces
+│    ├── auth_service.ts      -| main logic of the index.html
+│    ├── gallery_service.ts   -| main logic of the gallery.html
+│    ├── http_service.ts      -| include get and post request functions
+│    ├── page_service.ts      -| add/get current page number to the local storage and set query params
+│    └── token_service.ts     -| add/get token and expiresTime to the local storage
 ├── css
 │    └── styles.css       -| styles for html
 ├── index.html            -| auth page
